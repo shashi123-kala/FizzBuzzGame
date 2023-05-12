@@ -50,4 +50,12 @@ public class FizzBuzzTest {
 		String numberReturned = fizzBuz.play(number);    
 		Assert.assertEquals("Buzz",numberReturned );
     }
+	
+	@Test
+    public void numberEqualToSix() {
+		int number = 6;
+		String numberReturned = fizzBuz.play(number);    
+		Assert.assertEquals("Fizz",numberReturned );
+    }
 }
+
