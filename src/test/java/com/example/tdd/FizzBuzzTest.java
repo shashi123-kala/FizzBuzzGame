@@ -9,6 +9,10 @@ import org.junit.Test;
 public class FizzBuzzTest {
 	
 	private  FizzBuzz fizzBuz;
+	public static final String NUMBER_DIVISBLEBY_THREE = "Fizz";
+	public static final String NUMBER_DIVISBLEBY_FIVE = "Buzz";
+	public static final String NUMBER_DIVISBLEBY_BOTH_THREE_AND_FIVE = "FizzBuzz";
+	
 	
 	@Before
     public void initializeGame() {
@@ -34,7 +38,7 @@ public class FizzBuzzTest {
     public void numberEqualToThree() {
 		int number = 3;
 		String numberReturned = fizzBuz.play(number);    
-		Assert.assertEquals("Fizz",numberReturned );
+		Assert.assertEquals(NUMBER_DIVISBLEBY_THREE,numberReturned );
     }
 	
 	@Test
@@ -48,14 +52,14 @@ public class FizzBuzzTest {
     public void numberEqualToFive() {
 		int number = 5;
 		String numberReturned = fizzBuz.play(number);    
-		Assert.assertEquals("Buzz",numberReturned );
+		Assert.assertEquals(NUMBER_DIVISBLEBY_FIVE,numberReturned );
     }
 	
 	@Test
     public void numberEqualToSix() {
 		int number = 6;
 		String numberReturned = fizzBuz.play(number);    
-		Assert.assertEquals("Fizz",numberReturned );
+		Assert.assertEquals(NUMBER_DIVISBLEBY_THREE,numberReturned );
     }
 	
 	@Test
@@ -76,14 +80,14 @@ public class FizzBuzzTest {
     public void numberEqualToNine() {
 		int number = 9;
 		String numberReturned = fizzBuz.play(number);    
-		Assert.assertEquals("Fizz",numberReturned );
+		Assert.assertEquals(NUMBER_DIVISBLEBY_THREE,numberReturned );
     }
 	
 	@Test
     public void numberEqualToTen() {
 		int number = 10;
 		String numberReturned = fizzBuz.play(number);    
-		Assert.assertEquals("Buzz",numberReturned );
+		Assert.assertEquals(NUMBER_DIVISBLEBY_FIVE,numberReturned );
     }
 	
 
@@ -119,7 +123,7 @@ public class FizzBuzzTest {
     public void numberEqualToFifteen() {
 		int number = 15;
 		String numberReturned = fizzBuz.play(number);    
-		Assert.assertEquals("FizzBuzz",numberReturned );
+		Assert.assertEquals(NUMBER_DIVISBLEBY_BOTH_THREE_AND_FIVE,numberReturned );
     }
 }
 
