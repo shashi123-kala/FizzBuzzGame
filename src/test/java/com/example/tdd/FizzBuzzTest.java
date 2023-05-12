@@ -30,4 +30,10 @@ public class FizzBuzzTest {
 		Assert.assertEquals("2",numberReturned );
     }
 
+	@Test
+    public void numberEqualToThree() {
+		int number = 3;
+		String numberReturned = fizzBuz.play(number);    
+		Assert.assertEquals("Fizz",numberReturned );
+    }
 }
