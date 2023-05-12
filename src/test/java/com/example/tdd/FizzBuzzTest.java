@@ -64,11 +64,20 @@ public class FizzBuzzTest {
 		String numberReturned = fizzBuz.play(number);    
 		Assert.assertEquals("7",numberReturned );
     }
+	
 	@Test
     public void numberEqualToEight() {
 		int number = 8;
 		String numberReturned = fizzBuz.play(number);    
 		Assert.assertEquals("8",numberReturned );
     }
+	
+	@Test
+    public void numberEqualToNine() {
+		int number = 9;
+		String numberReturned = fizzBuz.play(number);    
+		Assert.assertEquals("Fizz",numberReturned );
+    }
 }
+
 
