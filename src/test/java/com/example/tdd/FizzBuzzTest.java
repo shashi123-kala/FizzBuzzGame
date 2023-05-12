@@ -22,5 +22,12 @@ public class FizzBuzzTest {
 		String numberReturned = fizzBuz.play(number);    
 		Assert.assertEquals("1",numberReturned );
     }
+	
+	@Test
+    public void numberEqualToTwo() {
+		int number = 2;
+		String numberReturned = fizzBuz.play(number);    
+		Assert.assertEquals("2",numberReturned );
+    }
 
 }
