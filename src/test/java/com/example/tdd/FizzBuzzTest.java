@@ -85,6 +85,14 @@ public class FizzBuzzTest {
 		String numberReturned = fizzBuz.play(number);    
 		Assert.assertEquals("Buzz",numberReturned );
     }
+	
+
+	@Test
+    public void numberEqualToEleven() {
+		int number = 11;
+		String numberReturned = fizzBuz.play(number);    
+		Assert.assertEquals("11",numberReturned );
+    }
 }
 
 
