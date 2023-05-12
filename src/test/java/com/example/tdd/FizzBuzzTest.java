@@ -93,6 +93,13 @@ public class FizzBuzzTest {
 		String numberReturned = fizzBuz.play(number);    
 		Assert.assertEquals("11",numberReturned );
     }
+	
+	@Test
+    public void numberEqualToTweleve() {
+		int number = 12;
+		String numberReturned = fizzBuz.play(number);    
+		Assert.assertEquals("Fizz",numberReturned );
+    }
 }
 
 
