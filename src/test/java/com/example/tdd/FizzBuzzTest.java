@@ -57,5 +57,12 @@ public class FizzBuzzTest {
 		String numberReturned = fizzBuz.play(number);    
 		Assert.assertEquals("Fizz",numberReturned );
     }
+	
+	@Test
+    public void numberEqualToSeven() {
+		int number = 7;
+		String numberReturned = fizzBuz.play(number);    
+		Assert.assertEquals("7",numberReturned );
+    }
 }
 
