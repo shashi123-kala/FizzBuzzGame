@@ -42,7 +42,7 @@ public class FizzBuzzTest {
 		"14, 14",
 		"15, FizzBuzz"
 	})
-	 public void numberEqualToTwo1(int number, String expected) {
+	 public void toCheckTheGivenNoisFizzOrBuzzOrFizzBuzz(int number, String expected) {
 	    assertEquals(expected , fizzBuz.play(number));
 
 	}

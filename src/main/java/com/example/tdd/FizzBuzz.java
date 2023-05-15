@@ -1,15 +1,16 @@
 package com.example.tdd;
 
+import java.util.Optional;
+
 public class FizzBuzz {
 
 public String play(int number) {	
-		if(number % 3 == 0 && number % 5 == 0)
-			return "FizzBuzz";
-		else if(number % 3 == 0 ) 
-			return "Fizz";
-		else if(number % 5 == 0 ) 
-			return "Buzz";
-			return String.valueOf(number);		
+	String result = Optional.of(number) 
+			.map(n ->
+			 ((n % 3 == 0 && n % 5 == 0) ? "FizzBuzz" : "")
+			+ (n % 3 == 0 ? "Fizz" : "")
+			+ (n % 5 == 0 ? "Buzz" : "")) .get(); 
+	return result.isEmpty() ? Integer.toString(number) : result;		
 		
 	}
 }
